@@ -1,0 +1,56 @@
+
+
+body {
+    background-color: rgba(0,255,0,0.5);  
+    color: red; 
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* padding: 25px 50px 75px 100px;  */
+/* margin: 25px 50px 75px 100px;  */
+
+
+#About{
+   padding: 5px 5px 5px 5px; 
+   margin: 25px 50px 75px 100px;  
+   color: black; 
+}
+
+#Experience{
+    padding: 5px 5px 5px 5px; 
+    margin: 25px 50px 75px 100px;  
+    color: black;
+}
+
+#Social{
+    padding: 5px 5px 5px 5px; 
+    margin: 25px 50px 75px 10px;  
+    color: black;
+}
+
+
+h1{
+    font-size: 30px; 
+    font-weight: bold ; 
+   
+}
+
+h2{
+    font-size: 25px; 
+    font-weight: bold ; 
+    color: rgba(255, 115, 0, 0.845); 
+
+}
+
+#Name{
+    font-family: cursive; 
+    color: white; 
+}
+
+li{
+    list-style-type: circle;
+}
+
+a:link {
+    color: hotpink; 
+}
