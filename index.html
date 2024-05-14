@@ -3,49 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link rel="stylesheet" type="text/css" href="css/index.css"/> 
 </head>
+<body>  
     <header>
+        <h1 id="Name">Nequil</h1>
         <nav> 
             <ul>
-                <li><a href="#About"></a></li>
-                <li<a href="#Experience"></a></li>
-                <li><a href="#Skills"></a></li>
-                <li><a href="#Projects"></a></li>
-                <li><a href="#Connect"></a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Connect">Connect</a></li>
             </ul>
         </nav>
     </header>
-<body>
-    <h1 id="Name">Nequil</h1>
-    <h2>Intro to HTML</h2>
-<section id="About"> 
-    <h2>About</h2>
-     <p>I'm from DC</p>
-</section>
-<section id="Experience"> 
-<h2>Experience</h2>
-    <p>I have some experience with HTML and JavaScript</p>
-    <ul>
-        <li>Lifeguard</li>
-        <li>Rec</li>
-        <li>Bartender</li>
-    </ul>
-</section>
-<section id="Skills">
-    <h2>Skills</h2>
-</section>
-<section id="Projects">
-    <h2>Projects</h2>
-</section>
-    <section id="Connect"> 
-    <h2>Connect: on linkedin</h2>
-    <ul>
-        <li><a href="https://linkedin.com/nequil-tabor">Linkedin.com</a></li>
-    </ul>
-</section>
 
+    <main>
+        <section id="About"> 
+            <h2>About</h2>
+            <p>I'm from DC</p>
+        </section>
+
+        <section id="Experience"> 
+            <h2>Experience</h2>
+            <div class="experience-container"> 
+                <p>I have some experience with HTML and JavaScript</p>
+                <ul>
+                    <li>Lifeguard</li>
+                    <li>Rec</li>
+                    <li>Bartender</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Skills">
+            <h2>Skills</h2>
+        </section>
+
+        <section id="Projects">
+            <h2>Projects</h2>
+        </section>
+
+        <section id="Connect"> 
+            <h2>Connect: on linkedin</h2>
+            <ul>
+                <li><a href="https://linkedin.com/nequil-tabor">Linkedin.com</a></li>
+            </ul>
+        </section>
+    </main>
+    <section id="messageForm"> 
+        <h2>Leave a Message </h2>
+        <form naem="leave_message"> 
+            <label for="usersName">Name</label>
+            <input type="text" name="usersName" required/>
+            <label for="usersEmail">Email</label>
+            <input type="email" name="userEmail" id="usersEmail" required/> 
+            <label for="usersMessage">Message</label>
+            <textarea name="usersMessage" id="usersMessage" rows="2" required></textarea> 
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+        </section>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
 </body>
-    
 </html>
