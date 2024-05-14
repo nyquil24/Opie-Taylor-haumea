@@ -53,7 +53,22 @@
             </ul>
         </section>
     </main>
-
+    <section id="messageForm"> 
+        <h2>Leave a Message </h2>
+        <form naem="leave_message"> 
+            <label for="usersName">Name</label>
+            <input type="text" name="usersName" required/>
+            <label for="usersEmail">Email</label>
+            <input type="email" name="userEmail" id="usersEmail" required/> 
+            <label for="usersMessage">Message</label>
+            <textarea name="usersMessage" id="usersMessage" rows="2" required></textarea> 
+            <button type="submit">Submit</button>
+        </form>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
+        </section>
     <footer>
         <!-- Footer content here -->
     </footer>
