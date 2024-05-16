@@ -48,14 +48,14 @@ messageForm.addEventListener("submit", (event) => {
     removeButton.innerText = "remove"; 
     removeButton.type = "button"; 
     removeButton.addEventListener("click", (e) => {
-        const entry = even.target.parentNode; 
+        const entry = event.target.parentNode; 
         console.log(entry); 
         entry.remove(); 
     });
 
    // Add new message to the DOM 
    newMessage.appendChild(removeButton); 
-   messageList.appnedChild(newMessage); 
+   messageList.appendChild(newMessage); 
 
 
 
