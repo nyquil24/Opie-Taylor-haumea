@@ -1,4 +1,25 @@
 
+const footer = document.createElement('footer'); 
+document.body.appendChild(footer); 
+
+const today = new Date(); 
+const thisYear = today.getFullYear(); 
+const copyright = document.createElement('p'); 
+copyright.innerHTML = `Nequil &copy; ${thisYear}`; 
+footer.appendChild(copyright); 
+
+const skills = ["JavaScript", "HTML", "CSS", "Git","GitHub"]; 
+const skillsSection = document.getElementById('Skills'); 
+const skillsList = skillsSection.querySelector('ul'); 
+
+for(let skill of skills){ 
+    const skillElement = document.createElement('li'); 
+    skillElement.textContent = skill; 
+    skillsList.appendChild(skillElement); 
+}
+
+
+
 
 const messageForm = document.querySelector("[name ='leave_message]"); 
 
