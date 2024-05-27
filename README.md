@@ -1,2 +1,2 @@
 # Opie-Taylor-haumea
-# Nequil Taborn
+# This is an application to showcase my frontend skills

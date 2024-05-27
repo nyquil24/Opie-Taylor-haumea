@@ -21,7 +21,7 @@ for(let skill of skills){
 
 
 
-const messageForm = document.querySelector("[name ='leave_message]"); 
+const messageForm = document.querySelector("[name ='leave_message']"); 
 
 
 messageForm.addEventListener("submit", (event) => {
@@ -48,17 +48,44 @@ messageForm.addEventListener("submit", (event) => {
     removeButton.innerText = "remove"; 
     removeButton.type = "button"; 
     removeButton.addEventListener("click", (e) => {
-        const entry = event.target.parentNode; 
+        const entry = e.target.parentNode; 
         console.log(entry); 
         entry.remove(); 
     });
 
    // Add new message to the DOM 
    newMessage.appendChild(removeButton); 
-   messageList.appendChild(newMessage); 
+   messageSection.appendChild(newMessage); 
 
 
 
    messageForm.reset(); 
 
 }); 
+
+
+
+// Fetch repositories from GitHub API
+fetch('https://api.github.com/users/nyquil24/repos')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok ' + response.statusText);
+    }
+    return response.json();
+  })
+  .then(data => {
+    const repositories = data;
+    console.log(repositories);
+
+    
+    const projectSection = document.getElementById('Projects');
+    const projectList = projectSection.querySelector('ul');
+
+   
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement('li');
+      project.textContent = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+
